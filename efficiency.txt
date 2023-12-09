@@ -1,0 +1,15 @@
+This file contains big-O complexities of the methods/constructors in dictionary data structure whose primary purpose is to be used for a spell checker. 
+__________________________________________________
+Method Name                   Complexities
+__________________________________________________
+addWord                       O(log n)
+findWord                      O(log n)
+deleteWord		      O(log n)
+findSimilar                   O(n)
+saveDictionary                O(n)
+__________________________________________________
+Constructor argument          Complexities
+__________________________________________________
+null                          O(1)
+word                          O(1)
+file                          O(n log n)

@@ -1,8 +1,6 @@
 package project_AVL;
-
 import project_AVL.WordAlreadyExistsException;
 import project_AVL.WordNotFoundException;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -113,7 +111,7 @@ public class Dictionary extends AVLTree<String>{
         output.close();
 
     }
-    protected void inorderSave(BSTNode<String> p, PrintWriter writer){
+    private void inorderSave(BSTNode<String> p, PrintWriter writer){
         if (p!= null) {
             inorderSave(p.left,writer);
             writer.println(p.el);

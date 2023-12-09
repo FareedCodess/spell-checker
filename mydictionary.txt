@@ -17452,7 +17452,6 @@ poignant
 poincare
 poinsettia
 point
-pointer
 pointwise
 poise
 poison
@@ -17882,7 +17881,6 @@ principal
 principia
 principle
 print
-printer
 printmake
 printout
 prior

@@ -1,5 +1,4 @@
 package project_AVL;
-import project_AVL.WordAlreadyExistsException;
 import java.io.File;
 import java.io.FileNotFoundException;
 
@@ -7,7 +6,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Driver {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Dictionary dictionary = null;
@@ -58,7 +56,7 @@ public class Driver {
                     }
                     case 5 -> {
                         if (dictionary == null) {
-                            System.out.println("> Dictionary not loaded/created");
+                            System.out.println("Dictionary not loaded/created");
                         } else {
                             System.out.println("Enter word: ");
                             String word = scanner.next();
@@ -91,7 +89,7 @@ public class Driver {
                             System.out.print("Enter word: ");
                             String word = scanner.next();
                             String[] similarWords = dictionary.findSimilar(word);
-                            if (similarWords.length == 0) {
+                            if (similarWords.length == 1 && similarWords[0].isEmpty()) {
                                 System.out.println("No similar words found.");
                             } else {
                                 System.out.println("Similar words:");
@@ -103,7 +101,7 @@ public class Driver {
                     }
                     case 8 -> {
                         if (dictionary == null) {
-                            System.out.println("> Dictionary not loaded/created");
+                            System.out.println("Dictionary not loaded/created");
                         } else {
 
                             System.out.print("Enter filename: ");
